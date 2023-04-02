@@ -1,0 +1,21 @@
+{
+	"name": "Cenario",
+	"plugin-id": "Tilemap",
+	"sid": 986748462054134,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 768,
+		"height": 576,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6268782,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

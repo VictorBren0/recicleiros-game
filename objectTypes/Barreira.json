@@ -1,0 +1,27 @@
+{
+	"name": "Barreira",
+	"plugin-id": "Tilemap",
+	"sid": 337564091933079,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 395517632370310
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2266202,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

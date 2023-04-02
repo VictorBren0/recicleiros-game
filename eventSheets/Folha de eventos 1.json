@@ -1,0 +1,200 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Jogador",
+					"sid": 775281724256731,
+					"behaviorType": "8Direções"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Jogador",
+					"sid": 307692376597656,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"speed": "50"
+					}
+				}
+			],
+			"sid": 582845123780959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 742491216283956
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Jogador",
+					"sid": 611554473975451,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"speed": "0"
+					}
+				}
+			],
+			"sid": 726930428358343,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Jogador",
+							"sid": 875049966746158,
+							"parameters": {
+								"comparison": 1,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Jogador",
+							"sid": 221102542459111,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 904327667234482
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 320010896238290,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Jogador",
+					"sid": 303982161205034,
+					"parameters": {
+						"instance-variable": "Direcao",
+						"value": "\"Cima\""
+					}
+				}
+			],
+			"sid": 858463195883034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 785069525071192,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Jogador",
+					"sid": 200441960322062,
+					"parameters": {
+						"instance-variable": "Direcao",
+						"value": "\"Baixo\""
+					}
+				}
+			],
+			"sid": 757546704869456
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 988973415272934,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Jogador",
+					"sid": 217987288526285,
+					"parameters": {
+						"instance-variable": "Direcao",
+						"value": "\"Esquerda\""
+					}
+				}
+			],
+			"sid": 377788200830706
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 526627727825722,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Jogador",
+					"sid": 764295274198177,
+					"parameters": {
+						"instance-variable": "Direcao",
+						"value": "\"Direita\""
+					}
+				}
+			],
+			"sid": 674276815545885
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 385944708181121
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Jogador",
+					"sid": 907286186034847,
+					"parameters": {
+						"animation": "Jogador.Direcao",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 692252063892236
+		}
+	],
+	"sid": 950613480803252
+}
