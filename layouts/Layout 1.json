@@ -51,105 +51,6 @@
 							1,
 							1
 						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Barreira",
-					"properties": {
-						"initially-visible": false,
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 6,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sólido": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 160,
-							"height": 90,
-							"max-width": 160,
-							"max-height": 90,
-							"data": "0,43x1,47x0,1,23x0,5x1,13x0,1,47x0,1,23x0,5x1,12x0,2x1,47x0,1,23x0,5x1,11x0,2x1,48x0,2x1,3x4,19x0,5x1,10x0,2x1,50x0,2x1,0,4hd,33x0,2x1,52x0,1,0,4hd,33x0,1,53x0,1,2x4hv,32x0,1,53x0,2x1,33x0,1,54x0,1,34x0,1,54x0,1,35x0,1,53x0,1,36x0,1,52x0,2x1,36x0,1,52x0,3x1,34x0,1,54x0,1,4x4,30x0,1,54x0,1,3x0,4hd,30x0,1,54x0,1,3x0,4hd,29x0,1,55x0,1,4x4hv,28x0,1,55x0,2x1,31x0,1,56x0,1,32x0,1,55x0,2x1,33x0,1,54x0,1,35x0,1,53x0,1,35x0,1,53x0,1,35x0,1,53x0,1,4x4,30x0,2x1,53x0,1,3x0,4hd,30x0,1,54x0,1,3x0,4hd,30x0,1,54x0,1,4x4hv,30x0,1,54x0,1,34x0,1,54x0,2x1,33x0,2x1,54x0,1,35x0,1,53x0,1,35x0,2x1,52x0,1,36x0,1,52x0,1,36x0,1,53x0,1,4x4,31x0,1,53x0,1,3x0,4hd,31x0,1,53x0,2x1,2x0,4hd,31x0,1,53x0,2x1,3x4hv,31x0,1,52x0,2x1,35x0,2x1,51x0,1,37x0,2x1,49x0,2x1,38x0,1,48x0,2x1,39x0,1,48x0,1,39x0,2x1,48x0,1,39x0,1,49x0,1,3x4,35x0,1,50x0,1,2x0,4hd,35x0,2x1,49x0,1,2x0,4hd,36x0,1,49x0,1,3x4hv,36x0,1,49x0,1,40x0,1,48x0,1,40x0,2x1,47x0,1,41x0,1,47x0,1,41x0,1,47x0,2x1,40x0,1,48x0,3x1,38x0,1,50x0,1,4x4,30x0,4x1,51x0,1,3x0,4hd,29x0,2x1,0,1,52x0,1,3x0,4hd,28x0,2x1,55x0,1,4x4hv,27x0,2x1,55x0,1,31x0,2x1,56x0,1,31x0,1,57x0,1,31x0,1,57x0,1,31x0,1,57x0,1,31x0,2x1,56x0,1,32x0,1,56x0,1,3x4,29x0,2x1,55x0,1,2x0,4hd,30x0,1,54x0,2x1,2x0,4hd,31x0,1,53x0,2x1,3x4hv,31x0,2x1,52x0,1,36x0,1,52x0,1,35x0,2x1,52x0,1,35x0,2x1,51x0,2x1,36x0,1,51x0,2x1,2x4,34x0,2x1,50x0,1,2x0,4hd,35x0,1,50x0,1,2x0,4hd,35x0,1,50x0,1,3x4hv,35x0,1,49x0,2x1,37x0,2x1,48x0,1,38x0,2x1,49x0,1,38x0,1,50x0,40x1,7250x0"
-						},
-						"tile-width": 16,
-						"tile-height": 16,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 2560,
-						"height": 1440,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Jogador",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Direita",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {
-						"Direcao": ""
-					},
-					"behaviors": {
-						"8Direções": {
-							"properties": {
-								"max-speed": 300,
-								"acceleration": 3000,
-								"deceleration": 3000,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"allow-sliding": false,
-								"default-controls": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 56,
-						"y": 305,
-						"width": 56.70840446754697,
-						"height": 69.68984645409387,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 1
 					}
 				},
@@ -199,6 +100,153 @@
 							1
 						],
 						"zElevation": 2
+					}
+				},
+				{
+					"type": "Lixos",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 160,
+							"height": 90,
+							"max-width": 182,
+							"max-height": 90,
+							"data": "471x0,303,889x0,303,399,495,591,687,783,84x0,304,400,496,592,688,784,84x0,305,401,497,593,689,785,84x0,306,402,498,594,690,786,84x0,307,403,499,595,691,787,84x0,308,404,500,596,692,788,84x0,309,405,501,597,693,789,84x0,310,406,502,598,694,790,1433x0,867,963,1059,1155,1251,1347,3x0,303,399,495,591,687,783,75x0,868,964,1060,1156,1252,1348,3x0,304,400,496,592,688,784,75x0,869,965,1061,1157,1253,1349,3x0,305,401,497,593,689,76x0,870,966,1062,1158,1254,1350,3x0,306,402,498,594,690,786,75x0,871,967,1063,1159,1255,1351,3x0,307,403,499,595,691,787,75x0,292,388,484,580,676,772,3x0,308,404,500,596,692,788,75x0,293,389,485,581,677,773,3x0,309,405,501,597,693,789,75x0,294,390,486,582,678,774,3x0,310,406,502,598,694,790,75x0,295,391,487,583,679,775,84x0,1540,1636,1732,1828,1924,2020,84x0,1541,1637,1733,1829,1925,2021,84x0,1542,1638,1734,1830,1926,2022,84x0,1543,1639,1735,1831,1927,2023,84x0,2212,2308,2404,2500,2596,85x0,2213,2309,2405,2501,2597,85x0,2214,2310,2406,2502,2598,85x0,2215,2311,2407,2503,2599,984x0,303,399,495,591,687,783,84x0,304,400,496,592,688,784,84x0,305,401,497,593,689,785,84x0,306,402,498,594,690,786,84x0,307,403,499,595,691,787,84x0,308,404,500,596,692,788,84x0,309,405,501,597,693,789,84x0,310,406,502,598,694,790,9885x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 2560,
+						"height": 1440,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 4
+					}
+				},
+				{
+					"type": "Jogador",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Direita",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {
+						"Direcao": ""
+					},
+					"behaviors": {
+						"8Direções": {
+							"properties": {
+								"max-speed": 300,
+								"acceleration": 3000,
+								"deceleration": 3000,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 56,
+						"y": 305,
+						"width": 56.70840446754697,
+						"height": 69.68984645409387,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 5
+					}
+				},
+				{
+					"type": "Barreira",
+					"properties": {
+						"initially-visible": false,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"ownData": {
+						"tilemapData": {
+							"width": 160,
+							"height": 90,
+							"max-width": 160,
+							"max-height": 90,
+							"data": "0,43x1,47x0,1,23x0,5x1,13x0,1,47x0,1,23x0,5x1,12x0,2x1,47x0,1,23x0,5x1,11x0,2x1,48x0,2x1,4,21x0,5x1,10x0,2x1,50x0,2x1,35x0,2x1,52x0,1,35x0,1,53x0,1,34x0,1,53x0,2x1,33x0,1,54x0,1,34x0,1,54x0,1,35x0,1,53x0,1,36x0,1,52x0,2x1,36x0,1,52x0,3x1,34x0,1,54x0,1,34x0,1,54x0,1,34x0,1,54x0,1,33x0,1,55x0,1,8x0,2x1vd,22x0,1,55x0,2x1,8x0,2x1vd,21x0,1,56x0,1,9x0,2x1vd,21x0,1,55x0,2x1,9x0,2x1vd,22x0,1,54x0,1,35x0,1,53x0,1,35x0,1,53x0,1,35x0,1,53x0,1,34x0,2x1,53x0,1,34x0,1,54x0,1,34x0,1,54x0,1,34x0,1,54x0,1,34x0,1,54x0,2x1,33x0,2x1,54x0,1,35x0,1,53x0,1,35x0,2x1,52x0,1,36x0,1,52x0,1,36x0,1,53x0,1,35x0,1,53x0,1,35x0,1,53x0,1,35x0,1,53x0,1,35x0,1,52x0,2x1,35x0,2x1,51x0,1,37x0,2x1,49x0,2x1,7x0,4vd,9x0,2x1vd,19x0,1,48x0,2x1,18x0,2x1vd,19x0,1,48x0,1,19x0,2x1vd,18x0,2x1,48x0,1,19x0,2x1vd,18x0,1,49x0,1,38x0,1,50x0,1,9x0,4vd,28x0,2x1,49x0,1,39x0,1,49x0,1,39x0,1,49x0,1,40x0,1,48x0,1,9x0,4vd,30x0,2x1,47x0,1,41x0,1,47x0,1,41x0,1,47x0,2x1,40x0,1,48x0,3x1,6x0,4vd,31x0,1,50x0,1,34x0,4x1,51x0,1,33x0,2x1,0,1,52x0,1,32x0,2x1,55x0,1,31x0,2x1,55x0,1,31x0,2x1,56x0,1,31x0,1,57x0,1,31x0,1,57x0,1,31x0,1,57x0,1,31x0,2x1,56x0,1,32x0,1,56x0,1,32x0,2x1,55x0,1,33x0,1,54x0,2x1,7x0,2x1vd,25x0,1,53x0,2x1,7x0,2x1vd,25x0,2x1,52x0,1,8x0,2x1vd,26x0,1,52x0,1,8x0,2x1vd,25x0,2x1,52x0,1,35x0,2x1,51x0,2x1,36x0,1,51x0,2x1,36x0,2x1,50x0,1,38x0,1,50x0,1,38x0,1,50x0,1,38x0,1,49x0,2x1,37x0,2x1,48x0,1,38x0,2x1,49x0,1,38x0,1,50x0,40x1,7250x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 2560,
+						"height": 1440,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 5
 					}
 				}
 			],
