@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 32703,
+	"savedWithRelease": 33600,
 	"name": "Recicleiros",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Mosaico",
 			"author": "Scirra",
@@ -33,13 +40,6 @@
 			"name": "8 Direções",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Sólido",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "pj00pks80qk",
@@ -49,8 +49,11 @@
 			"Teclado",
 			"Cenario",
 			"Objetos",
-			"Barreira",
-			"Lixos"
+			"Lata",
+			"Item",
+			"lixo_amarelo",
+			"Pontuacao",
+			"Pontos"
 		],
 		"subfolders": []
 	},

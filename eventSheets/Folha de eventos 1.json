@@ -2,6 +2,26 @@
 	"name": "Folha de eventos 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "item_pego",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 669828459366103
+		},
+		{
+			"eventType": "variable",
+			"name": "pontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 108230400276456
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -191,9 +211,158 @@
 						"animation": "Jogador.Direcao",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Item",
+					"sid": 317898877603890,
+					"parameters": {
+						"text": "item_pego"
+					}
 				}
 			],
 			"sid": 692252063892236
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 776164096501488,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 904347398599880,
+					"parameters": {
+						"object-to-create": "Lata",
+						"layer": "0",
+						"x": "int(random(0, 1280))",
+						"y": "int(random(0, 720))",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 328134554573342
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 787767899865108
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Pontos",
+					"sid": 731896742421570,
+					"parameters": {
+						"text": "Pontos"
+					}
+				}
+			],
+			"sid": 673590142270873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 321671909124216,
+					"parameters": {
+						"object": "Lata"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Lata",
+					"sid": 529763938076584
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 166676272332125,
+					"parameters": {
+						"variable": "item_pego",
+						"value": "\"Lata\""
+					}
+				}
+			],
+			"sid": 137473578775324
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 449217839661619,
+					"parameters": {
+						"object": "lixo_amarelo"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 311071861755986,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 586099843736355,
+							"parameters": {
+								"first-value": "item_pego",
+								"comparison": 0,
+								"second-value": "\"Lata\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 712257591373920,
+							"parameters": {
+								"variable": "pontos",
+								"value": "pontos + 10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 649931769743053,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 880117212802336,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 657981985796192
+				}
+			]
 		}
 	],
 	"sid": 950613480803252

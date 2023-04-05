@@ -1,0 +1,57 @@
+{
+	"name": "Lata",
+	"plugin-id": "Sprite",
+	"sid": 345922535074568,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7755020,
+						"collisionPoly": {
+							"points": [
+								0.2076923076923077,
+								0.2,
+								0.5,
+								0.020370370370370372,
+								0.875,
+								0.12037037037037036,
+								1,
+								0.5,
+								0.8153846153846154,
+								0.8222222222222222,
+								0.5,
+								0.9611111111111111,
+								0.18461538461538463,
+								0.8222222222222222,
+								0.04038461538461539,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 474591328132724,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
