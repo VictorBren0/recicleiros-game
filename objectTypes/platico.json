@@ -1,0 +1,57 @@
+{
+	"name": "platico",
+	"plugin-id": "Sprite",
+	"sid": 143631305493703,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6912804,
+						"collisionPoly": {
+							"points": [
+								0.3192307692307692,
+								0.3074074074074074,
+								0.5,
+								0.05925925925925926,
+								0.6788461538461539,
+								0.30925925925925923,
+								0.6903846153846154,
+								0.5,
+								0.6692307692307692,
+								0.6814814814814815,
+								0.5,
+								1,
+								0.2923076923076923,
+								0.7185185185185186,
+								0.27115384615384613,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 101384267005345,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

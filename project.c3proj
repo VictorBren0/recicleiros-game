@@ -53,7 +53,9 @@
 			"Item",
 			"lixo_amarelo",
 			"Pontuacao",
-			"Pontos"
+			"Pontos",
+			"lixo_vermelho",
+			"platico"
 		],
 		"subfolders": []
 	},
