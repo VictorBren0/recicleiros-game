@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Botão",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -24,6 +31,13 @@
 			"type": "plugin",
 			"id": "Text",
 			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Plano de Fundo em Blocos",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -55,7 +69,12 @@
 			"Pontuacao",
 			"Pontos",
 			"lixo_vermelho",
-			"platico"
+			"platico",
+			"tempo",
+			"contador",
+			"PlanoDeFundoEmBlocos",
+			"Fim",
+			"Botão"
 		],
 		"subfolders": []
 	},
@@ -67,7 +86,9 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"lv 1",
+			"gameover",
+			"lv 2"
 		],
 		"subfolders": []
 	},

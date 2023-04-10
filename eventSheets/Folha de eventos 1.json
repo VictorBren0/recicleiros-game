@@ -32,6 +32,16 @@
 			"sid": 988812144551246
 		},
 		{
+			"eventType": "variable",
+			"name": "contador",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 262837602603237
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -229,6 +239,14 @@
 					"parameters": {
 						"text": "item_pego"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 387207160579555,
+					"parameters": {
+						"text": "contador"
+					}
 				}
 			],
 			"sid": 692252063892236
@@ -279,6 +297,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 499177168548135,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 114790858088501,
+					"parameters": {
+						"variable": "contador",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 956755707040659
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 787767899865108
@@ -291,6 +334,24 @@
 					"sid": 731896742421570,
 					"parameters": {
 						"text": "Pontos"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Lata",
+					"sid": 376863277092974
+				},
+				{
+					"id": "destroy",
+					"objectClass": "platico",
+					"sid": 393287766779672
+				},
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 462760448385647,
+					"parameters": {
+						"text": "contador"
 					}
 				}
 			],
@@ -385,7 +446,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 712257591373920,
+							"sid": 422645299753276,
 							"parameters": {
 								"variable": "pontos",
 								"value": "pontos + 10"
@@ -547,6 +608,63 @@
 					"sid": 978569967731327
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 555226872225939,
+					"parameters": {
+						"first-value": "contador",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 921261954472210,
+					"parameters": {
+						"layout": "gameover"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 539859445674913
+				}
+			],
+			"sid": 790757364738464
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 132661554187178,
+					"parameters": {
+						"variable": "pontos",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 471024694075911,
+					"parameters": {
+						"layout": "lv 2"
+					}
+				}
+			],
+			"sid": 146288742957110
 		}
 	],
 	"sid": 950613480803252
