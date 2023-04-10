@@ -1,5 +1,5 @@
 {
-	"name": "gameover",
+	"name": "inicio",
 	"layers": [
 		{
 			"name": "Camada 0",
@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "PlanoDeFundoEmBlocos",
+					"type": "PlanoDeFundoEmBlocos2",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -25,14 +25,14 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 15,
+					"uid": 16,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": -1,
-						"y": 4,
-						"width": 1292,
-						"height": 711,
+						"y": -1,
+						"width": 1295,
+						"height": 722,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -46,7 +46,7 @@
 					}
 				}
 			],
-			"sid": 821907935085760,
+			"sid": 798768666351755,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -57,9 +57,9 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				1,
+				1,
+				1,
 				1
 			],
 			"isTransparent": false,
@@ -75,7 +75,7 @@
 			"global": false
 		}
 	],
-	"sid": 920672565065951,
+	"sid": 279251660615406,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,

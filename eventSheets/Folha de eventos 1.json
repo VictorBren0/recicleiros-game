@@ -615,11 +615,11 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 447703517047233,
+					"sid": 373248334234799,
 					"parameters": {
 						"first-value": "contador",
 						"comparison": 0,
-						"second-value": "170"
+						"second-value": "0"
 					}
 				}
 			],

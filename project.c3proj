@@ -8,15 +8,15 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Button",
-			"name": "Botão",
+			"id": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Teclado",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -79,13 +79,13 @@
 			"platico",
 			"tempo",
 			"contador",
-			"PlanoDeFundoEmBlocos",
-			"Fim",
-			"Botão",
 			"Cenario_praia",
 			"Mosaico",
 			"barreira",
-			"Mosaico2"
+			"Mosaico2",
+			"PlanoDeFundoEmBlocos",
+			"PlanoDeFundoEmBlocos2",
+			"Mouse"
 		],
 		"subfolders": []
 	},
@@ -99,7 +99,8 @@
 		"items": [
 			"lv 1",
 			"gameover",
-			"lv 2"
+			"lv 2",
+			"inicio"
 		],
 		"subfolders": []
 	},
