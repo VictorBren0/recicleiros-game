@@ -1,0 +1,21 @@
+{
+	"name": "Cenario_praia",
+	"plugin-id": "Tilemap",
+	"sid": 100171261014900,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 768,
+		"height": 576,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 4314122,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

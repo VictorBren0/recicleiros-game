@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "contador",
 			"type": "number",
-			"initialValue": "60",
+			"initialValue": "180",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -257,9 +257,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 776164096501488,
+					"sid": 957399496712541,
 					"parameters": {
-						"interval-seconds": "5"
+						"interval-seconds": "7"
 					}
 				}
 			],
@@ -615,11 +615,11 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 555226872225939,
+					"sid": 447703517047233,
 					"parameters": {
 						"first-value": "contador",
 						"comparison": 0,
-						"second-value": "0"
+						"second-value": "170"
 					}
 				}
 			],
@@ -646,15 +646,20 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 132661554187178,
+					"sid": 527933289060436,
 					"parameters": {
 						"variable": "pontos",
 						"comparison": 5,
-						"value": "5"
+						"value": "100"
 					}
 				}
 			],
 			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 990207058020329
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",

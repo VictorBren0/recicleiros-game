@@ -54,6 +54,13 @@
 			"name": "8 Direções",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Sólido",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "pj00pks80qk",
@@ -74,7 +81,11 @@
 			"contador",
 			"PlanoDeFundoEmBlocos",
 			"Fim",
-			"Botão"
+			"Botão",
+			"Cenario_praia",
+			"Mosaico",
+			"barreira",
+			"Mosaico2"
 		],
 		"subfolders": []
 	},
