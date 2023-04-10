@@ -22,6 +22,16 @@
 			"sid": 108230400276456
 		},
 		{
+			"eventType": "variable",
+			"name": "inventario",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 988812144551246
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -298,23 +308,49 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 137473578775324,
+			"children": [
 				{
-					"id": "destroy",
-					"objectClass": "Lata",
-					"sid": 529763938076584
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 166676272332125,
-					"parameters": {
-						"variable": "item_pego",
-						"value": "\"Lata\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 447319502062335,
+							"parameters": {
+								"variable": "inventario"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 789953451028526,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"Lata\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Lata",
+							"sid": 180611147673452
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 596796537266361,
+							"parameters": {
+								"variable": "inventario",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 891677077009859
 				}
-			],
-			"sid": 137473578775324
+			]
 		},
 		{
 			"eventType": "block",
@@ -371,6 +407,15 @@
 								"variable": "item_pego",
 								"value": "\"\""
 							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 878379187201260,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 657981985796192
@@ -389,23 +434,49 @@
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 922071075850173,
+			"children": [
 				{
-					"id": "destroy",
-					"objectClass": "platico",
-					"sid": 553691925686435
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 909754995638715,
-					"parameters": {
-						"variable": "item_pego",
-						"value": "\"Copo Plastico\""
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 793282982152424,
+							"parameters": {
+								"variable": "inventario"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 501011614454228,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"Copo Plastico\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "platico",
+							"sid": 307534844591747
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 526916188921015,
+							"parameters": {
+								"variable": "inventario",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 206638427039375
 				}
-			],
-			"sid": 922071075850173
+			]
 		},
 		{
 			"eventType": "block",
@@ -461,6 +532,15 @@
 							"sid": 248497460797973,
 							"parameters": {
 								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 900438327363524,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
 							}
 						}
 					],
