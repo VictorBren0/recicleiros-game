@@ -1,47 +1,41 @@
 {
-	"name": "lixo_vermelho",
+	"name": "background",
 	"plugin-id": "Sprite",
-	"sid": 882976460998511,
+	"sid": 435629490938982,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "solid",
-			"name": "Sólido",
-			"sid": 758194842761782
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 520,
-						"height": 540,
+						"width": 1920,
+						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3813593,
+						"imageSpriteId": 7319147,
 						"collisionPoly": {
 							"points": [
-								0.4461538461538462,
-								0.42962962962962964,
+								0,
+								0,
 								0.5,
-								0.4222222222222222,
-								0.5326923076923077,
-								0.45,
-								0.5307692307692308,
+								0,
+								1,
+								0,
+								1,
 								0.5,
-								0.5230769230769231,
-								0.5407407407407407,
+								1,
+								1,
 								0.5,
-								0.5574074074074075,
-								0.4634615384615385,
-								0.5537037037037037,
-								0.4346153846153846,
+								1,
+								0,
+								1,
+								0,
 								0.5
 							]
 						},
@@ -49,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 632602689231168,
+				"sid": 441197173848277,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

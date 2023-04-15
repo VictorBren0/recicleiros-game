@@ -1,0 +1,96 @@
+{
+	"name": "tutorial",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 427717131237625
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source",
+					"objectClass": "Vídeo",
+					"sid": 682022796399047,
+					"parameters": {
+						"webm-source": "\"abertura.mp4\"",
+						"ogg-theora-source": "\"\"",
+						"h264-source": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 961506611116916,
+					"parameters": {
+						"audio-file": "335584__hmmm101__pixel-song-8",
+						"loop": "looping",
+						"volume": "-30",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 289531046921556
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Vídeo",
+					"sid": 201477361807532
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 294597863331399,
+					"parameters": {
+						"layout": "lv 1"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 432343914812718,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 359413277758485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "skip",
+					"sid": 287753299207303
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Vídeo",
+					"sid": 492871049927854
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 247801328357337,
+					"parameters": {
+						"layout": "lv 1"
+					}
+				}
+			],
+			"sid": 978993521023344
+		}
+	],
+	"sid": 225339643600453
+}

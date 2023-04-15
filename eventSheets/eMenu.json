@@ -1,0 +1,60 @@
+{
+	"name": "eMenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 832869984254559
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 695332307616100,
+					"parameters": {
+						"audio-file": "335584__hmmm101__pixel-song-8",
+						"loop": "looping",
+						"volume": "-30",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 685884463175341
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "iniciar",
+					"sid": 289043588155012
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 688084207034846,
+					"parameters": {
+						"layout": "intro"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 515238321410657,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 885072878164851
+		}
+	],
+	"sid": 414664486225988
+}

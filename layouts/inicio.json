@@ -2,39 +2,29 @@
 	"name": "inicio",
 	"layers": [
 		{
-			"name": "Camada 0",
+			"name": "background",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "PlanoDeFundoEmBlocos2",
+					"type": "background",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 16,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -1,
-						"y": -1,
-						"width": 1295,
-						"height": 722,
-						"originX": 0,
-						"originY": 0,
+						"x": 644,
+						"y": 363,
+						"width": 1286,
+						"height": 724,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -46,7 +36,7 @@
 					}
 				}
 			],
-			"sid": 798768666351755,
+			"sid": 307213784280577,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -57,9 +47,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
 			"isTransparent": false,
@@ -73,9 +63,74 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "itens",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "iniciar",
+					"properties": {
+						"type": "button",
+						"text": "IINICIAR JOGO",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": false,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 470,
+						"y": 394,
+						"width": 314,
+						"height": 69,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
+			"sid": 366501977233757,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
-	"sid": 279251660615406,
+	"sid": 664456700045558,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,
@@ -84,5 +139,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "eMenu"
 }

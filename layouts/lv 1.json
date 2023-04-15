@@ -82,9 +82,9 @@
 						"tilemapData": {
 							"width": 160,
 							"height": 90,
-							"max-width": 160,
-							"max-height": 90,
-							"data": "2x4,39x2hv,1hv,51x0,4,38x0,1hv,50x0,4,37x0,1hv,51x0,4,36x0,1hv,53x0,4,35x0,1hv,54x0,4,33x0,1hv,55x0,4,32x0,1hv,54x0,2x4,32x0,1hv,55x0,4,33x0,1hv,89x0,1hv,55x0,4,0,4,31x0,1hv,57x0,4,32x0,1hv,57x0,4,32x0,1hv,57x0,4,32x0,1hv,57x0,2x4,30x0,1hv,58x0,4,29x0,1hv,59x0,4,28x0,1hv,59x0,4hv,28x0,1hv,59x0,4hv,29x0,1hv,59x0,4hv,29x0,1hv,58x0,4hv,31x0,1hv,56x0,4hv,33x0,1hv,55x0,4hv,33x0,1hv,55x0,4hv,33x0,1hv,55x0,4hv,32x0,2x1hv,56x0,2x4hv,30x0,1hv,58x0,4hv,29x0,1hv,58x0,2x4hv,30x0,1hv,56x0,4hv,32x0,1hv,56x0,4hv,33x0,1hv,55x0,4hv,34x0,1hv,54x0,2x4hv,34x0,1hv,55x0,4hv,34x0,1hv,54x0,4hv,34x0,1hv,54x0,2x4hv,33x0,2x1hv,55x0,4hv,32x0,1hv,56x0,4hv,31x0,2x1hv,55x0,2x4hv,31x0,1hv,55x0,4hv,34x0,1hv,54x0,4hv,35x0,1hv,52x0,4hv,37x0,1hv,49x0,2x4hv,38x0,1hv,48x0,4hv,39x0,1hv,49x0,4hv,38x0,1hv,50x0,2x4hv,36x0,1hv,53x0,4hv,35x0,1hv,53x0,4hv,36x0,1hv,51x0,2x4hv,37x0,1hv,49x0,4hv,40x0,1hv,48x0,4hv,41x0,1hv,47x0,4hv,41x0,1hv,48x0,3x4hv,38x0,1hv,51x0,4hv,37x0,1hv,51x0,4hv,36x0,2x1hv,52x0,4hv,30x0,6x1hv,54x0,4hv,29x0,1hv,59x0,4hv,28x0,1hv,59x0,2x4hv,27x0,1hv,59x0,4hv,28x0,2x1hv,59x0,4hv,28x0,1hv,59x0,4hv,29x0,1hv,58x0,4hv,30x0,1hv,89x0,1hv,58x0,4hv,31x0,1hv,58x0,4hv,31x0,1hv,58x0,4hv,31x0,1hv,57x0,4hv,32x0,1hv,54x0,3x4hv,33x0,1hv,53x0,4hv,34x0,1hv,54x0,4hv,33x0,1hv,54x0,4hv,34x0,1hv,53x0,4hv,35x0,1hv,54x0,4hv,35x0,1hv,54x0,4hv,35x0,1hv,53x0,4hv,36x0,1hv,51x0,2x4hv,4x0,2x4hv,30x0,1hv,50x0,4hv,5x0,3x4hv,29x0,1hv,70x0,3x4hv,15x0,1hv,51x0,4hv,19x0,3x4hv,14x0,1hv,89x0,1hv,52x0,36x2hv,7162x0"
+							"max-width": 268,
+							"max-height": 152,
+							"data": "4,1vd,39x2hv,1hv,1vd,110x0,1vd,9x0,1hv,0,1hv,28x0,1vd,110x0,1vd,9x0,5x1hv,24x0,3x1vd,110x0,2x1vd,8x0,1hv,0,3x1hv,23x0,2x1vd,113x0,2x1vd,7x0,5x1hv,23x0,1vd,1hv,114x0,2x1vd,6x0,4x1hv,23x0,2x1vd,114x0,1vd,35x0,1vd,115x0,1vd,35x0,1vd,115x0,1vd,35x0,2x1vd,113x0,2x1vd,36x0,1vd,113x0,4x1vd,34x0,1vd,117x0,1vd,33x0,1vd,117x0,2x1vd,151x0,1vd,32x0,1vd,1hv,117x0,3x1vd,30x0,1vd,120x0,1vd,29x0,1vd,1hv,118x0,2x1vd,29x0,1vd,120x0,1vd,30x0,2x1vd,119x0,1vd,31x0,2x1vd,117x0,1vd,33x0,1vd,116x0,1vd,33x0,1hv,2x1vd,115x0,1vd,34x0,2x1vd,115x0,1vd,34x0,1vd,116x0,1vd,34x0,1vd,116x0,1vd,33x0,2x1vd,116x0,3x1vd,31x0,1vd,116x0,4x1vd,30x0,1hv,1vd,116x0,2x1vd,33x0,2x1vd,115x0,2x1vd,33x0,1hv,1vd,115x0,2x1vd,34x0,2x1vd,115x0,2x1vd,34x0,2x1vd,115x0,1vd,35x0,2x1vd,114x0,1vd,36x0,1vd,114x0,3x1vd,34x0,1vd,116x0,2x1vd,33x0,1vd,1hv,114x0,3x1vd,33x0,2x1vd,114x0,2x1vd,33x0,1hv,0,2x1vd,112x0,2x1vd,34x0,1hv,2x0,1vd,112x0,2x1vd,37x0,1vd,108x0,5x1vd,37x0,1hv,1vd,108x0,4x1vd,38x0,1vd,1hv,108x0,1vd,41x0,1vd,1hv,108x0,1vd,41x0,1vd,109x0,2x1vd,40x0,1vd,110x0,3x1vd,38x0,1vd,112x0,1vd,38x0,1vd,109x0,4x1vd,38x0,2x1vd,108x0,2x1vd,40x0,1hv,2x1vd,108x0,1vd,41x0,1hv,1vd,107x0,2x1vd,42x0,1vd,108x0,1vd,42x0,1vd,111x0,1vd,39x0,1vd,112x0,1vd,38x0,1vd,112x0,1vd,37x0,2x1vd,113x0,1vd,33x0,1hv,0,2x1vd,115x0,1vd,31x0,3x1vd,117x0,1vd,30x0,2x1vd,117x0,1vd,31x0,2x1vd,118x0,1vd,30x0,2x1vd,119x0,1vd,29x0,2x1vd,118x0,2x1vd,30x0,1vd,119x0,1vd,31x0,1vd,119x0,1vd,31x0,2x1vd,118x0,1vd,32x0,1vd,118x0,1vd,32x0,2x1vd,117x0,3x1vd,31x0,2x1vd,118x0,1vd,32x0,2x1vd,115x0,1vd,0,1vd,33x0,1vd,115x0,1vd,35x0,1vd,115x0,1vd,35x0,1vd,114x0,1vd,36x0,1vd,113x0,1vd,4hv,36x0,2x1vd,112x0,1vd,38x0,2x1vd,111x0,1vd,38x0,1hv,1vd,112x0,2x1vd,37x0,1vd,112x0,1,1vd,37x0,1vd,110x0,1,1vd,7x0,4hv,30x0,2x1vd,110x0,1,1vd,38x0,1vd,111x0,1,1vd,37x0,1vd,150x0,1hv,1vd,113x0,36x2hv,2x0,1vd,151x0,1vd,28383x0"
 						},
 						"tile-width": 16,
 						"tile-height": 16,
@@ -178,7 +178,14 @@
 					},
 					"uid": 11,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1226,
 						"y": 185,
@@ -207,7 +214,14 @@
 					},
 					"uid": 8,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1201.3428284433899,
 						"y": 383,
@@ -530,6 +544,49 @@
 						],
 						"angle": 0,
 						"zElevation": 8
+					}
+				},
+				{
+					"type": "placar",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Action Man",
+						"size": 14,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.16470588235294117,
+							0.9254901960784314,
+							0.01568627450980392,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1122.8158447265625,
+						"y": 306.78426106770837,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 10
 					}
 				}
 			],

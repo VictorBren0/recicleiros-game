@@ -8,6 +8,20 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Áudio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Botão",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -49,6 +63,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Vídeo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direções",
@@ -84,8 +105,15 @@
 			"barreira",
 			"Mosaico2",
 			"PlanoDeFundoEmBlocos",
-			"PlanoDeFundoEmBlocos2",
-			"Mouse"
+			"Mouse",
+			"placar",
+			"Áudio",
+			"background",
+			"iniciar",
+			"voltar",
+			"Mosaico3",
+			"Vídeo",
+			"skip"
 		],
 		"subfolders": []
 	},
@@ -97,16 +125,19 @@
 	},
 	"layouts": {
 		"items": [
+			"inicio",
 			"lv 1",
-			"gameover",
 			"lv 2",
-			"inicio"
+			"gameover",
+			"intro"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Folha de eventos 1"
+			"Folha de eventos 1",
+			"eMenu",
+			"tutorial"
 		],
 		"subfolders": []
 	},
@@ -116,7 +147,40 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "411443__abbasgamez__powerup2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 352896430169914,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "319200__18hiltc__pixel-game-beep.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 688480681937173,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "650965__donaldtimo__beat-tune-abysses.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 195082811837340,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "335584__hmmm101__pixel-song-8.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 908230709132731,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
@@ -124,7 +188,16 @@
 			"subfolders": []
 		},
 		"video": {
-			"items": [],
+			"items": [
+				{
+					"name": "abertura.mp4",
+					"type": "video/mp4",
+					"sid": 277933643294107,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"font": {
@@ -263,5 +336,5 @@
 	},
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
-	"firstLayout": null
+	"firstLayout": "inicio"
 }
