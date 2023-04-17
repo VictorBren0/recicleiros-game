@@ -1,0 +1,57 @@
+{
+	"name": "papel",
+	"plugin-id": "Sprite",
+	"sid": 532216262591532,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2937680,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0.2,
+								0.5,
+								0.06555555555555556,
+								0.83,
+								0.17,
+								0.9355555555555556,
+								0.5,
+								0.8288888888888889,
+								0.8288888888888889,
+								0.5,
+								0.9433333333333334,
+								0.19777777777777777,
+								0.8022222222222222,
+								0.03,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 395599373586250,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

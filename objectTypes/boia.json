@@ -1,0 +1,57 @@
+{
+	"name": "boia",
+	"plugin-id": "Sprite",
+	"sid": 782061988320553,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 70,
+						"height": 70,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1038593,
+						"collisionPoly": {
+							"points": [
+								0.29888888888888887,
+								0.29888888888888887,
+								0.5,
+								0.21222222222222223,
+								0.7077777777777777,
+								0.2922222222222222,
+								0.8144444444444444,
+								0.5,
+								0.7266666666666667,
+								0.7266666666666667,
+								0.5,
+								0.8333333333333334,
+								0.2733333333333333,
+								0.7266666666666667,
+								0.1922222222222222,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 632473922586744,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Banco",
+	"plugin-id": "Sprite",
+	"sid": 415690392192862,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 487265250264259
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1472967,
+						"collisionPoly": {
+							"points": [
+								0.18111111111111114,
+								0.37777777777777793,
+								0.818333333333334,
+								0.37722222222222235,
+								0.826111111111111,
+								0.7522222222222226,
+								0.7594444444444437,
+								0.7500000000000002,
+								0.76,
+								0.581666666666667,
+								0.2550000000000001,
+								0.5838888888888883,
+								0.2566666666666666,
+								0.7649999999999988,
+								0.18111111111111114,
+								0.7633333333333339
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 110450047901727,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

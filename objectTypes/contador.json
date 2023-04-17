@@ -5,5 +5,10 @@
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": []
+	"effectTypes": [
+		{
+			"effectId": "blacknwhite",
+			"name": "PretoBranco"
+		}
+	]
 }

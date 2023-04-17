@@ -1,0 +1,63 @@
+{
+	"name": "balde",
+	"plugin-id": "Sprite",
+	"sid": 503343612444746,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 334153298294186
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7172342,
+						"collisionPoly": {
+							"points": [
+								0.23444444444444446,
+								0.23444444444444446,
+								0.5,
+								0.23444444444444446,
+								0.7655555555555555,
+								0.23444444444444446,
+								0.8477777777777777,
+								0.5,
+								0.7466666666666667,
+								0.7466666666666667,
+								0.5,
+								0.7788888888888889,
+								0.27,
+								0.73,
+								0.2388888888888889,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 937127355375130,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

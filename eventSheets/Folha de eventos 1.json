@@ -257,9 +257,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 957399496712541,
+					"sid": 779453993787707,
 					"parameters": {
-						"interval-seconds": "7"
+						"interval-seconds": "10"
 					}
 				}
 			],
@@ -280,9 +280,22 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 791324732331688,
+					"sid": 707219135499986,
 					"parameters": {
-						"object-to-create": "platico",
+						"object-to-create": "plastico",
+						"layer": "0",
+						"x": "int(random(0, 1280))",
+						"y": "int(random(0, 720))",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 786976155357546,
+					"parameters": {
+						"object-to-create": "papel",
 						"layer": "0",
 						"x": "int(random(0, 1280))",
 						"y": "int(random(0, 720))",
@@ -343,8 +356,13 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "platico",
-					"sid": 393287766779672
+					"objectClass": "plastico",
+					"sid": 649001759235254
+				},
+				{
+					"id": "destroy",
+					"objectClass": "papel",
+					"sid": 735488744459039
 				},
 				{
 					"id": "set-text",
@@ -357,13 +375,13 @@
 				{
 					"id": "play",
 					"objectClass": "Áudio",
-					"sid": 879178434142175,
+					"sid": 825693798070022,
 					"parameters": {
 						"audio-file": "650965__donaldtimo__beat-tune-abysses",
 						"loop": "looping",
 						"volume": "-30",
 						"stereo-pan": "0",
-						"tag-optional": "\"\""
+						"tag-optional": "\"fundo\""
 					}
 				}
 			],
@@ -482,10 +500,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 422645299753276,
+							"sid": 992610324879654,
 							"parameters": {
 								"variable": "pontos",
-								"value": "pontos + 10"
+								"value": "pontos + 5"
 							}
 						},
 						{
@@ -526,9 +544,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "placar",
-							"sid": 532369958468893,
+							"sid": 312768663027939,
 							"parameters": {
-								"text": "\"+10\""
+								"text": "\"+5\""
 							}
 						},
 						{
@@ -556,11 +574,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 722415605311967,
+							"sid": 836055694772957,
 							"parameters": {
 								"first-value": "item_pego",
 								"comparison": 0,
-								"second-value": "\"Copo Plastico\""
+								"second-value": "\"Garrafa Plastica\""
 							}
 						}
 					],
@@ -580,10 +598,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 616436246064363,
+							"sid": 558371388797248,
 							"parameters": {
 								"variable": "pontos",
-								"value": "pontos - 10"
+								"value": "pontos - 5"
 							}
 						},
 						{
@@ -624,9 +642,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "placar",
-							"sid": 897360313754363,
+							"sid": 251701517113860,
 							"parameters": {
-								"text": "\"-10\""
+								"text": "\"-5\""
 							}
 						},
 						{
@@ -647,6 +665,104 @@
 						}
 					],
 					"sid": 857058713837276
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 645440107704362,
+							"parameters": {
+								"first-value": "item_pego",
+								"comparison": 0,
+								"second-value": "\"Papel\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 293077392473163,
+							"parameters": {
+								"audio-file": "411443__abbasgamez__powerup2",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 198806876482562,
+							"parameters": {
+								"variable": "pontos",
+								"value": "pontos - 5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 732038319957409,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 456387252845659,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 612069853723059,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "placar",
+							"sid": 683843590491122,
+							"parameters": {
+								"object": "Jogador",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 987174499591178,
+							"parameters": {
+								"text": "\"-5\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 202162263840464,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 396676449280510,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 710275967158315
 				}
 			]
 		},
@@ -656,9 +772,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Jogador",
-					"sid": 368563698573477,
+					"sid": 984424620852546,
 					"parameters": {
-						"object": "platico"
+						"object": "plastico"
 					}
 				}
 			],
@@ -693,16 +809,16 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 501011614454228,
+							"sid": 255062106448180,
 							"parameters": {
 								"variable": "item_pego",
-								"value": "\"Copo Plastico\""
+								"value": "\"Garrafa Plastica\""
 							}
 						},
 						{
 							"id": "destroy",
-							"objectClass": "platico",
-							"sid": 307534844591747
+							"objectClass": "plastico",
+							"sid": 288897994303369
 						},
 						{
 							"id": "set-boolean-eventvar",
@@ -739,11 +855,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 688238976781450,
+							"sid": 796260399103868,
 							"parameters": {
 								"variable": "item_pego",
 								"comparison": 0,
-								"value": "\"Copo Plastico\""
+								"value": "\"Garrafa Plastica\""
 							}
 						}
 					],
@@ -861,10 +977,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 383324701293943,
+							"sid": 225893427358700,
 							"parameters": {
 								"variable": "pontos",
-								"value": "pontos - 10"
+								"value": "pontos - 5"
 							}
 						},
 						{
@@ -905,9 +1021,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "placar",
-							"sid": 517825139098561,
+							"sid": 514378957301622,
 							"parameters": {
-								"text": "\"-10\""
+								"text": "\"-5\""
 							}
 						},
 						{
@@ -928,6 +1044,483 @@
 						}
 					],
 					"sid": 509315759439410
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 687607091277820,
+							"parameters": {
+								"first-value": "item_pego",
+								"comparison": 0,
+								"second-value": "\"Papel\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 683192582586458,
+							"parameters": {
+								"audio-file": "411443__abbasgamez__powerup2",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 374615620669559,
+							"parameters": {
+								"variable": "pontos",
+								"value": "pontos - 5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 156515480272440,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 175688317785875,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 890955645602289,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "placar",
+							"sid": 540131817920202,
+							"parameters": {
+								"object": "Jogador",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 365375773285133,
+							"parameters": {
+								"text": "\"-5\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 954597889340017,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 376878627495541,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 391665072963196
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 135919426103478,
+					"parameters": {
+						"object": "papel"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 499169580784971,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 174103955551897,
+							"parameters": {
+								"variable": "inventario"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 452740521719482,
+							"parameters": {
+								"audio-file": "319200__18hiltc__pixel-game-beep",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 481480760897075,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"Papel\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "papel",
+							"sid": 628581415617664
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 704809953992465,
+							"parameters": {
+								"variable": "inventario",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 511058470605518
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 558578441941637,
+					"parameters": {
+						"object": "lixo_azul"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 190749290006710,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 426337728885080,
+							"parameters": {
+								"variable": "item_pego",
+								"comparison": 0,
+								"value": "\"Papel\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 301986563313676,
+							"parameters": {
+								"audio-file": "411443__abbasgamez__powerup2",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 222046221383963,
+							"parameters": {
+								"variable": "pontos",
+								"value": "pontos + 5"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 439206809922141,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 926128265112949,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 439975105618837,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "placar",
+							"sid": 987193398003352,
+							"parameters": {
+								"object": "Jogador",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 499582263162414,
+							"parameters": {
+								"text": "\"+5\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 588491219850139,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 187891359161628,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 586765015317236
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 595234085066465,
+							"parameters": {
+								"first-value": "item_pego",
+								"comparison": 0,
+								"second-value": "\"Lata\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 326979416549958,
+							"parameters": {
+								"audio-file": "411443__abbasgamez__powerup2",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 666077969804023,
+							"parameters": {
+								"variable": "pontos",
+								"value": "pontos - 5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 236803755765537,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 684776724794631,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 197698944165559,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "placar",
+							"sid": 428255240142656,
+							"parameters": {
+								"object": "Jogador",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 232896701636638,
+							"parameters": {
+								"text": "\"-5\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 206880516273548,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 236058211004662,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 117248771879481
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 759125041725874,
+							"parameters": {
+								"first-value": "item_pego",
+								"comparison": 0,
+								"second-value": "\"Garrafa Plastica\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 272892257850910,
+							"parameters": {
+								"audio-file": "411443__abbasgamez__powerup2",
+								"loop": "not-looping",
+								"volume": "20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 568303552799713,
+							"parameters": {
+								"variable": "pontos",
+								"value": "pontos - 5"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Pontos",
+							"sid": 656662452347710,
+							"parameters": {
+								"text": "Pontos"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 461953811236437,
+							"parameters": {
+								"variable": "item_pego",
+								"value": "\"\""
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 989682799990832,
+							"parameters": {
+								"variable": "inventario",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "placar",
+							"sid": 720740998557682,
+							"parameters": {
+								"object": "Jogador",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 996952750711146,
+							"parameters": {
+								"text": "\"-5\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 239809661077914,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "placar",
+							"sid": 158938768655353,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 405469419478137
 				}
 			]
 		},
@@ -937,7 +1530,7 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 373248334234799,
+					"sid": 787734145112333,
 					"parameters": {
 						"first-value": "contador",
 						"comparison": 0,
@@ -947,17 +1540,25 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 921261954472210,
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 793857641090155,
 					"parameters": {
-						"layout": "gameover"
+						"tag": "\"fundo\""
 					}
 				},
 				{
 					"id": "reset-global-variables",
 					"objectClass": "System",
 					"sid": 539859445674913
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 466573485916627,
+					"parameters": {
+						"layout": "gameover"
+					}
 				}
 			],
 			"sid": 790757364738464
@@ -968,7 +1569,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 527933289060436,
+					"sid": 980566176871994,
 					"parameters": {
 						"variable": "pontos",
 						"comparison": 5,
@@ -983,11 +1584,19 @@
 					"sid": 990207058020329
 				},
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 471024694075911,
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 232517547707985,
 					"parameters": {
-						"layout": "lv 2"
+						"tag": "\"fundo\""
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 913469824793413,
+					"parameters": {
+						"which": "next"
 					}
 				}
 			],

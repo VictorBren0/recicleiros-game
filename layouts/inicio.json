@@ -77,7 +77,7 @@
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
-						"auto-font-size": false,
+						"auto-font-size": true,
 						"checked": false,
 						"id": "",
 						"class": ""

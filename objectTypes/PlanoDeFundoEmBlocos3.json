@@ -1,21 +1,20 @@
 {
-	"name": "Mosaico",
-	"plugin-id": "Tilemap",
-	"sid": 308471049220076,
+	"name": "PlanoDeFundoEmBlocos3",
+	"plugin-id": "TiledBg",
+	"sid": 326060162469667,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 1536,
-		"height": 1536,
+		"width": 1280,
+		"height": 720,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 5666836,
+		"imageSpriteId": 2593247,
 		"useCollisionPoly": true
-	},
-	"tile-collision-polys": {}
+	}
 }

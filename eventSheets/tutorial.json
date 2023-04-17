@@ -87,6 +87,14 @@
 					"parameters": {
 						"layout": "lv 1"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 117814593608058,
+					"parameters": {
+						"tag": "\"\""
+					}
 				}
 			],
 			"sid": 978993521023344

@@ -1,0 +1,63 @@
+{
+	"name": "lixo_azul",
+	"plugin-id": "Sprite",
+	"sid": 308660366173911,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 172808250803565
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 520,
+						"height": 540,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9291273,
+						"collisionPoly": {
+							"points": [
+								0.4461538461538462,
+								0.42962962962962964,
+								0.5,
+								0.4222222222222222,
+								0.5326923076923077,
+								0.45,
+								0.5288461538461539,
+								0.5,
+								0.5230769230769231,
+								0.5407407407407407,
+								0.5,
+								0.5555555555555556,
+								0.44326923076923086,
+								0.542592592592593,
+								0.4346153846153846,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 979050796787216,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

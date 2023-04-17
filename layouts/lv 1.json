@@ -110,7 +110,7 @@
 					}
 				},
 				{
-					"type": "platico",
+					"type": "plastico",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -118,14 +118,43 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 12,
+					"uid": 40,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 796,
-						"y": 425,
-						"width": 50,
-						"height": 50,
+						"x": 498,
+						"y": 443,
+						"width": 40,
+						"height": 40,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "papel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 548,
+						"y": 302,
+						"width": 30,
+						"height": 30,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -240,6 +269,42 @@
 					}
 				},
 				{
+					"type": "lixo_azul",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 12,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 741,
+						"y": 220,
+						"width": 520,
+						"height": 540,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 4
+					}
+				},
+				{
 					"type": "Jogador",
 					"properties": {
 						"initially-visible": true,
@@ -332,19 +397,55 @@
 					}
 				},
 				{
+					"type": "Banco",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 69,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 406,
+						"y": 236,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 7
+					}
+				},
+				{
 					"type": "contador",
 					"properties": {
 						"text": "aaaa",
 						"enable-bbcode": true,
 						"font": "Action Man",
-						"size": 25,
+						"size": 40,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -357,10 +458,18 @@
 					"uid": 14,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"PretoBranco": {
+							"isEnabled": true,
+							"parameters": {
+								"threshold": 0.5
+							}
+						}
+					},
 					"world": {
 						"x": 594,
-						"y": 79,
-						"width": 251.5151515151515,
+						"y": 23,
+						"width": 135.04999733756455,
 						"height": 59.54545454545462,
 						"originX": 0,
 						"originY": 0,
@@ -377,7 +486,7 @@
 				{
 					"type": "Item",
 					"properties": {
-						"text": "",
+						"text": "aaaa",
 						"enable-bbcode": false,
 						"font": "Action Man",
 						"size": 18,
@@ -401,8 +510,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 72,
-						"y": 121,
+						"x": 48,
+						"y": 397,
 						"width": 340.60010465346664,
 						"height": 81,
 						"originX": 0,
@@ -444,8 +553,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 73,
-						"y": 75,
+						"x": 50,
+						"y": 360,
 						"width": 273.16457858352044,
 						"height": 44.830657820983866,
 						"originX": 0,
@@ -461,38 +570,103 @@
 					}
 				},
 				{
-					"type": "tempo",
+					"type": "Banco",
 					"properties": {
-						"text": "Tempo",
-						"enable-bbcode": true,
-						"font": "Action Man",
-						"size": 17,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 70,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 925,
+						"y": 227,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
+						"angle": 0,
+						"zElevation": 7
+					}
+				},
+				{
+					"type": "Banco",
+					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 13,
+					"uid": 71,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 579,
-						"y": 49,
-						"width": 73.03030303030323,
-						"height": 36.969696969697054,
-						"originX": 0,
-						"originY": 0,
+						"x": 702,
+						"y": 329,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 7
+					}
+				},
+				{
+					"type": "Banco",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 72,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 304,
+						"y": 359,
+						"width": 120,
+						"height": 120,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -506,7 +680,7 @@
 				{
 					"type": "Pontos",
 					"properties": {
-						"text": "",
+						"text": "aa",
 						"enable-bbcode": true,
 						"font": "Action Man",
 						"size": 24,
@@ -530,8 +704,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 195,
-						"y": 79,
+						"x": 179,
+						"y": 362,
 						"width": 90,
 						"height": 36,
 						"originX": 0,

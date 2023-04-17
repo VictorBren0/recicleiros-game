@@ -82,6 +82,13 @@
 			"name": "Sólido",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blacknwhite",
+			"name": "Preto & branco",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "pj00pks80qk",
@@ -97,11 +104,9 @@
 			"Pontuacao",
 			"Pontos",
 			"lixo_vermelho",
-			"platico",
-			"tempo",
 			"contador",
 			"Cenario_praia",
-			"Mosaico",
+			"praia",
 			"barreira",
 			"Mosaico2",
 			"PlanoDeFundoEmBlocos",
@@ -113,7 +118,19 @@
 			"voltar",
 			"Mosaico3",
 			"Vídeo",
-			"skip"
+			"skip",
+			"papel",
+			"plastico",
+			"lixo_azul",
+			"PlanoDeFundoEmBlocos2",
+			"PlanoDeFundoEmBlocos3",
+			"next",
+			"balde",
+			"boia",
+			"bola",
+			"cadeira",
+			"Banco",
+			"Reiniciar"
 		],
 		"subfolders": []
 	},
@@ -126,10 +143,12 @@
 	"layouts": {
 		"items": [
 			"inicio",
+			"intro",
 			"lv 1",
+			"finallv1",
 			"lv 2",
-			"gameover",
-			"intro"
+			"finallv2",
+			"gameover"
 		],
 		"subfolders": []
 	},
@@ -137,7 +156,10 @@
 		"items": [
 			"Folha de eventos 1",
 			"eMenu",
-			"tutorial"
+			"tutorial",
+			"egameover",
+			"efinallv2",
+			"efinallv1"
 		],
 		"subfolders": []
 	},
