@@ -1,7 +1,7 @@
 {
-	"name": "Reiniciar",
+	"name": "Sair",
 	"plugin-id": "Button",
-	"sid": 617960071931905,
+	"sid": 459898870282840,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": []

@@ -139,6 +139,37 @@
 					}
 				},
 				{
+					"type": "Sair",
+					"properties": {
+						"type": "button",
+						"text": "Sair",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 46,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1190,
+						"y": 43,
+						"width": 72,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
 					"type": "Lata",
 					"properties": {
 						"initially-visible": true,

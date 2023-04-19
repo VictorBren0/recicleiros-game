@@ -1673,6 +1673,35 @@
 				}
 			],
 			"sid": 146288742957110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Sair",
+					"sid": 707630676575672
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 686121425333613,
+					"parameters": {
+						"layout": "inicio"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 409377146906761,
+					"parameters": {
+						"tag": "\"fundo\""
+					}
+				}
+			],
+			"sid": 799489013978149
 		}
 	],
 	"sid": 950613480803252

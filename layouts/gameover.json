@@ -23,41 +23,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 467,
-						"y": 488,
+						"x": 465,
+						"y": 427,
 						"width": 385,
 						"height": 73,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "Reiniciar",
-					"properties": {
-						"type": "button",
-						"text": "REINICIAR",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 73,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 468,
-						"y": 404,
-						"width": 384,
-						"height": 68,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -91,8 +60,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": -4,
+						"x": -1,
+						"y": 2,
 						"width": 1292,
 						"height": 722,
 						"originX": 0,
