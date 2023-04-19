@@ -1,0 +1,55 @@
+{
+	"name": "efinallv",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "next",
+					"sid": 586371575957062
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 613129371565257,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Vídeo",
+					"sid": 767413240690202
+				}
+			],
+			"sid": 493891646672391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 218716193551739
+				}
+			],
+			"actions": [
+				{
+					"id": "set-source",
+					"objectClass": "Vídeo",
+					"sid": 273002432286699,
+					"parameters": {
+						"webm-source": "\"concluido.mp4\"",
+						"ogg-theora-source": "\"\"",
+						"h264-source": "\"\""
+					}
+				}
+			],
+			"sid": 945862595426780
+		}
+	],
+	"sid": 143905505036591
+}

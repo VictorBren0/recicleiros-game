@@ -122,8 +122,6 @@
 			"papel",
 			"plastico",
 			"lixo_azul",
-			"PlanoDeFundoEmBlocos2",
-			"PlanoDeFundoEmBlocos3",
 			"next",
 			"balde",
 			"boia",
@@ -145,9 +143,8 @@
 			"inicio",
 			"intro",
 			"lv 1",
-			"finallv1",
+			"finallv",
 			"lv 2",
-			"finallv2",
 			"gameover"
 		],
 		"subfolders": []
@@ -158,8 +155,7 @@
 			"eMenu",
 			"tutorial",
 			"egameover",
-			"efinallv2",
-			"efinallv1"
+			"efinallv"
 		],
 		"subfolders": []
 	},
@@ -215,6 +211,14 @@
 					"name": "abertura.mp4",
 					"type": "video/mp4",
 					"sid": 277933643294107,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "concluido.mp4",
+					"type": "video/mp4",
+					"sid": 489521494902459,
 					"file-info": {
 						"purpose": "none"
 					}

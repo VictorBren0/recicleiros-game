@@ -542,6 +542,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 181237883625337,
+							"parameters": {
+								"color": "rgbEx(2, 168, 7)"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "placar",
 							"sid": 312768663027939,
@@ -640,6 +648,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 952352414192424,
+							"parameters": {
+								"color": "rgbEx(255, 0, 0)"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "placar",
 							"sid": 251701517113860,
@@ -735,6 +751,14 @@
 							"parameters": {
 								"object": "Jogador",
 								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 350265937930410,
+							"parameters": {
+								"color": "rgbEx(255, 0, 0)"
 							}
 						},
 						{
@@ -921,6 +945,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 212833433455802,
+							"parameters": {
+								"color": "rgbEx(2, 168, 7)"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "placar",
 							"sid": 607604491933004,
@@ -1019,6 +1051,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 997055405235161,
+							"parameters": {
+								"color": "rgbEx(255, 0, 0)"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "placar",
 							"sid": 514378957301622,
@@ -1114,6 +1154,14 @@
 							"parameters": {
 								"object": "Jogador",
 								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 344511317991202,
+							"parameters": {
+								"color": "rgbEx(255, 0, 0)"
 							}
 						},
 						{
@@ -1300,6 +1348,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 810083355445943,
+							"parameters": {
+								"color": "rgbEx(2, 168, 7)"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "placar",
 							"sid": 499582263162414,
@@ -1398,6 +1454,14 @@
 							}
 						},
 						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 994193807303435,
+							"parameters": {
+								"color": "rgbEx(255, 0, 0)"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "placar",
 							"sid": 232896701636638,
@@ -1493,6 +1557,14 @@
 							"parameters": {
 								"object": "Jogador",
 								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-font-color",
+							"objectClass": "placar",
+							"sid": 398576894640047,
+							"parameters": {
+								"color": "rgbEx(255, 0, 0)"
 							}
 						},
 						{

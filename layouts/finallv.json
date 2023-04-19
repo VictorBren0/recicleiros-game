@@ -1,50 +1,11 @@
 {
-	"name": "finallv1",
+	"name": "finallv",
 	"layers": [
 		{
 			"name": "Camada 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "PlanoDeFundoEmBlocos3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 47,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1,
-						"y": 1,
-						"width": 1279,
-						"height": 717,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "next",
 					"properties": {
@@ -66,6 +27,34 @@
 						"y": 395,
 						"width": 384,
 						"height": 74,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Vídeo",
+					"properties": {
+						"webm-source": "",
+						"ogg-theora-source": "",
+						"h264-source": "",
+						"autoplay": "yes",
+						"play-in-background": false,
+						"initially-visible": true
+					},
+					"uid": 33,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -9,
+						"y": -7,
+						"width": 1300,
+						"height": 741,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -115,5 +104,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "efinallv1"
+	"eventSheet": "efinallv"
 }
